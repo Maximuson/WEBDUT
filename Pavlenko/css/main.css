@@ -1,0 +1,43 @@
+table{
+  margin: 30px auto;
+   border-collapse: collapse; width: 400px; height: 400px; border-style: hidden; 
+  
+}
+
+td {
+  background-color: #2f2f2f;
+  border: 5px solid #000; 
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+.black {
+  background-color: #000;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.yellow {
+  background-color: #fffa69
+}
+
+.red {
+  background-color:  #ff5b2d
+}
+
+.blue {
+  background-color: #074481
+}
+
+
+
+.bold {
+  font-weight: bold;
+}
+.cursive {
+  font-style: italic
+}
