@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4 text-center">Графік роботи</h1>
+
+      <div>
+        <strong>В якій половині дня працює лікарь</strong>
+      </div>
+      <input type="radio" name="day" id="off_second" />
+      <label for="off_second">
+        У першій половині дня
+      </label>
+      <br />
+      <input type="radio" name="day" id="off_first" />
+      <label for="off_first">У другій половині дня</label> <br />
+      <input checked type="radio" name="day" id="off_days" />
+      <label for="off_days">Неважливо</label><br />
+      <div><strong>Категорія лікаря</strong></div>
+      <input type="radio" name="category" id="category0" />
+      <label for="category0">Вища</label><br />
+      <input type="radio" name="category" id="category1" />
+      <label for="category1">Перша</label> <br />
+      <input type="radio" name="category" id="category2" />
+      <label for="category2">Друга</label><br />
+      <input checked type="radio" name="category" id="category_off" />
+      <label for="category_off">Неважлива</label><br />
+
+      <table class="table table-striped thead-dark">
+        <caption class="visually-hidden">
+          Графік лікарів
+        </caption>
+        <thead class="thead-dark">
+          <th scope="col">Спеціальність</th>
+          <th scope="col">ПІБ</th>
+          <th scope="col">Категорія</th>
+          <th scope="col">Номер каб.</th>
+          <th scope="col">Години прийому</th>
+        </thead>
+        <tbody>
+          <tr class="first category1">
+            <td>Логопед</td>
+            <td>Шевченко П.Р.</td>
+            <td>Перша</td>
+            <td>362</td>
+            <td>8:00-15:20</td>
+          </tr>
+          <tr class="first category0">
+            <td>Психіатр</td>
+            <td>Бойко Ф.З.</td>
+            <td>Вища</td>
+            <td>392</td>
+            <td>8:00-13:00</td>
+          </tr>
+          <tr class="second category2">
+            <td>Лор</td>
+            <td>Коваленко Г.К.</td>
+            <td>Друга</td>
+            <td>362</td>
+            <td>15:30-20:00</td>
+          </tr>
+          <tr class="first category1">
+            <td>Невролог</td>
+            <td>Ковальчук А.Н.</td>
+            <td>Перша</td>
+            <td>360</td>
+            <td>9:00-14:00</td>
+          </tr>
+          <tr class="first category0">
+            <td>Педіатр</td>
+            <td>Крутенко З.Г.</td>
+            <td>Вища</td>
+            <td>322</td>
+            <td>7:00-14:00</td>
+          </tr>
+          <tr class="second category0">
+            <td>Проктолог</td>
+            <td>Олейник Л.Г.</td>
+            <td>Вища</td>
+            <td>369</td>
+            <td>18:00-22:00</td>
+          </tr>
+          <tr class="first category0">
+            <td>Мамолог</td>
+            <td>Цезар А.А.</td>
+            <td>Вища</td>
+            <td>356</td>
+            <td>10:00-15:30</td>
+          </tr>
+          <tr class="first category1">
+            <td>Ортопед</td>
+            <td>Шевчук З.Д.</td>
+            <td>Перша</td>
+            <td>359</td>
+            <td>8:30-17:00</td>
+          </tr>
+          <tr class="second category2">
+            <td>Дерматолог</td>
+            <td>Зубченко Т.Ф.</td>
+            <td>Друга</td>
+            <td>342</td>
+            <td>15:30-18:00</td>
+          </tr>
+          <tr class="first category1">
+            <td>Окуліст</td>
+            <td>Серпенко А.Н.</td>
+            <td>Перша</td>
+            <td>400</td>
+            <td>9:00-15:20</td>
+          </tr>
+          <tr class="first category2">
+            <td>Педіатр</td>
+            <td>Зубренко Т.В.</td>
+            <td>Друга</td>
+            <td>365</td>
+            <td>8:30-12:00</td>
+          </tr>
+          <tr class="category0">
+            <td>Ортопед</td>
+            <td>Зенченко Ж.З.</td>
+            <td>Вища</td>
+            <td>250</td>
+            <td>9:00-15:30</td>
+          </tr>
+          <tr class="first category1">
+            <td>Гематолог</td>
+            <td>Бойко А.В.</td>
+            <td>Перша</td>
+            <td>352</td>
+            <td>18:30-21:00</td>
+          </tr>
+          <tr class="second category0">
+            <td>Педіатр</td>
+            <td>Олейник В.К.</td>
+            <td>Вища</td>
+            <td>363</td>
+            <td>17:30-22:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <form action="">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            id="phone"
+            class="input form-control"
+            type="tel"
+            pattern="^\+?\d{12}"
+            value="+380999999999"
+            required
+            maxlength="13"
+          />
+          <small  class="form-text text-muted">Номер в форматі +380999999999</small>
+          <label for="email">Почта</label>
+          <input
+            id="email"
+            class="input form-control"
+            type="email"
+            value="test@gmail.com"
+            required
+          />
+          <small class="form-text text-muted">Ваша електронна адреса</small>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

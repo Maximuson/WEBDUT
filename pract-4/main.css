@@ -1,0 +1,71 @@
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+table {
+  overflow: hidden;
+}
+tr:hover > td {
+  background-color: lightblue;
+}
+td,
+th {
+  position: relative;
+}
+td:hover::after,
+thead th:not(:empty):hover::after {
+  content: "";
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+td:hover::after,
+th:hover::after {
+  background-color: lightblue;
+}
+table {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.dropddown-item > .input-day:checked::before {
+}
+.form-check-label::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+#category0:checked~table tbody tr:not(.category0),
+#category1:checked~table tbody tr:not(.category1),
+#category2:checked~table tbody tr:not(.category2),
+#off_second:checked~table tbody tr.second,
+#off_first:checked~table tbody tr:not(.second){
+    display: none;
+}
+
+.input:valid {
+  background-color: green;
+}
+.input:not(:valid) {
+  background-color: red;
+}
+
