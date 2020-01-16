@@ -1,0 +1,91 @@
+html * {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.header .container {
+  padding: 30px 0;
+}
+
+.list-item {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 22px;
+  height: 350px;
+  min-width: 200px;
+  max-width: 32%;
+  width: 100%;
+  border: 1px solid #000;
+}
+.list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.product-img {
+  width: auto;
+  height: 200px;
+  margin: 0 auto;
+}
+.product-name {
+  display: block;
+}
+
+input[name^="star-rate"] {
+  /* display: none; */
+  width: 0;
+  height: 0;
+  margin-right: 40px;
+}
+.product-rate {
+    height: 36px;
+    padding-left: 30px;
+}
+.product-rate input::before {
+  content: "\2606";
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  top: -18px;
+  color: orange;
+}
+.product-rate input:hover::before,
+.product-rate input:checked::before {
+  content: "\2605";
+  font-size: 39px;
+  top: -24px;
+}
+input[name="star-rate"]:hover ~ input[name="star-rate"]::before,
+input[name="star-rate"]:checked ~ input[name="star-rate"]::before
+{
+  content: "\2605";
+  display: inline-block;
+  font-size: 39px;
+  top: -24px;
+}
+
+.product-rate {
+  direction: rtl;
+  text-align: left;
+}
