@@ -53,14 +53,13 @@ li {
 }
 
 input[name^="star-rate"] {
-  /* display: none; */
   width: 0;
   height: 0;
   margin-right: 40px;
 }
 .product-rate {
-    height: 36px;
-    padding-left: 30px;
+  height: 36px;
+  padding-left: 30px;
 }
 .product-rate input::before {
   content: "\2606";
@@ -77,8 +76,7 @@ input[name^="star-rate"] {
   top: -24px;
 }
 input[name="star-rate"]:hover ~ input[name="star-rate"]::before,
-input[name="star-rate"]:checked ~ input[name="star-rate"]::before
-{
+input[name="star-rate"]:checked ~ input[name="star-rate"]::before {
   content: "\2605";
   display: inline-block;
   font-size: 39px;

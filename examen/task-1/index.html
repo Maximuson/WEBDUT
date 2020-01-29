@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="./main.css" /> -->
+    <style>
+      .wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form action="" method="post">
+          <h2>Хочу підписатися!</h2>
+          <p>
+            Після вашої згоди на підписку вам будуть приходити повідомлення на
+            пошту і телефон
+          </p>
+          <label for="name">Ваше імя</label>
+          <input
+            class="input"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="імя"
+          /><br /><br />
+          <label for="email">Email</label>
+          <input
+            class="input"
+            id="email"
+            type="text"
+            name="email"
+            placeholder="email"
+          /><br /><br />
+          <label for="phone">Телефон</label>
+          <input
+            class="input"
+            id="phone"
+            type="text"
+            name="phone"
+            placeholder="телефон"
+          /><br /><br />
+          Хочу отримувати повідомлення<br /><br />
+          <label>
+            <input type="checkbox" name="recive_post" /> На пошту<br /><br />
+          </label>
+          <label>
+            <input type="checkbox" name="recive_phone" /> На телефон<br /><br />
+          </label>
+          <input type="submit" value="Підписатися" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
