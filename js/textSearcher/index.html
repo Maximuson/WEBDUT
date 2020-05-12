@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <textarea
+          class="js-inputText"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="js-makeTable">Analyze</button>
+      </div>
+      <div class="container">
+        <div class="js-tableWrapper"></div>
+        <div>
+          <input class="js-wordToSearch" list="textWords" />
+          <datalist id="textWords"> </datalist>
+          <button class="js-searchWord">search</button>
+          <div class="js-show-text"></div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <script src="./js/main.js" />
+  </body>
+</html>
